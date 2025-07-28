@@ -1,0 +1,159 @@
+/* =============================================================
+   BlessNotes Theme – project‑theme.css
+   -------------------------------------------------------------
+   This file overrides the MELLC UI‑Kit core tokens to deliver the
+   BlessNotes brand: royal‑inspired purples, a vibrant teal
+   secondary, and a warm copper accent – all wrapped in a modern
+   glassmorphic aesthetic.  
+   -------------------------------------------------------------
+   CONVENTIONS
+   • Use .bg*, .text*, .border* classes for colors
+   • Utility classes mirror the UI‑Kit naming pattern
+   • Never hard‑code color values elsewhere – import this file
+   • "glass"/"frost" utilities provide the frosted look
+   ============================================================*/
+
+/* === Primary (Royal Purple) === */
+.bgprimary {
+  background-color: #5a30b5; /* Royal Purple */
+}
+.textprimary {
+  color: #f5f3ff; /* Lavender‑white for contrast */
+}
+.borderprimary {
+  border-color: #3f1f7a; /* Deeper Purple */
+}
+
+/* === Secondary (Vibrant Teal) === */
+.bgsecondary {
+  background-color: #009688; /* Teal 600 */
+}
+.textsecondary {
+  color: #e0f2f1; /* Teal 50 */
+}
+.bordersecondary {
+  border-color: #00695c; /* Teal 800 */
+}
+
+/* === Accent (Copper Glow) === */
+.bgaccent {
+  background-color: #c47c50; /* Copper */
+}
+.textaccent {
+  color: #fffaf7; /* Off‑white */
+}
+.borderaccent {
+  border-color: #935c38; /* Deeper Copper */
+}
+
+/* === CTA (Action Red) === */
+.bgcta {
+  background-color: #e63946;
+}
+.textcta {
+  color: #ffffff;
+}
+.bordercta {
+  border-color: #9d1f2c;
+}
+
+/* === Light (Neutral Base) === */
+.bglight {
+  background-color: #f3f4f6; /* Gray 100 */
+}
+.textlight {
+  color: #374151; /* Gray 700 */
+}
+.borderlight {
+  border-color: #d1d5db; /* Gray 300 */
+}
+
+/* === Dark (Surface for Glass) === */
+.bgdark {
+  background-color: #1b1d2b;
+}
+.textdark {
+  color: #e5e7eb;
+}
+.borderdark {
+  border-color: #2d3145;
+}
+
+/* === Shadows === */
+.shadow-primary {
+  box-shadow: 0 4px 14px rgba(90, 48, 181, 0.45);
+}
+.shadow-secondary {
+  box-shadow: 0 4px 14px rgba(0, 150, 136, 0.4);
+}
+.shadow-accent {
+  box-shadow: 0 4px 14px rgba(196, 124, 80, 0.4);
+}
+.shadow-white {
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.55);
+}
+
+/* === Hover States === */
+.hover\:bgprimary:hover { background-color: #5a30b5; }
+.hover\:bgsecondary:hover { background-color: #009688; }
+.hover\:bgaccent:hover { background-color: #c47c50; }
+.hover\:bgcta:hover { background-color: #e63946; }
+.hover\:bglight:hover { background-color: #f3f4f6; }
+.hover\:bgtransparent:hover { background-color: transparent; }
+
+.hover\:textprimary:hover { color: #f5f3ff; }
+.hover\:textsecondary:hover { color: #e0f2f1; }
+.hover\:textaccent:hover { color: #fffaf7; }
+.hover\:textcta:hover { color: #ffffff; }
+.hover\:textlight:hover { color: #374151; }
+.hover\:texttransparent:hover { color: transparent; }
+
+.hover\:borderprimary:hover { border-color: #3f1f7a; }
+.hover\:bordersecondary:hover { border-color: #00695c; }
+.hover\:borderaccent:hover { border-color: #935c38; }
+.hover\:bordercta:hover { border-color: #9d1f2c; }
+.hover\:borderlight:hover { border-color: #d1d5db; }
+.hover\:bordertransparent:hover { border-color: transparent; }
+
+/* === Glassmorphism Utilities === */
+.glass {
+  background: rgba(255, 255, 255, 0.14);
+  backdrop-filter: blur(14px) saturate(180%);
+  -webkit-backdrop-filter: blur(14px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.glass-dark {
+  background: rgba(27, 29, 43, 0.4);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* Frosted button hover */
+.hover\:glass:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* === Gradients === */
+.bggradient-primary-secondary {
+  background: linear-gradient(135deg, #5a30b5 0%, #009688 100%);
+}
+.bggradient-primary-accent {
+  background: linear-gradient(135deg, #5a30b5 0%, #c47c50 100%);
+}
+
+/* === Radius Utilities === */
+.rounded-xl {
+  border-radius: 1rem;
+}
+.rounded-2xl {
+  border-radius: 1.5rem;
+}
+
+/* === Transition Helper === */
+.transition-soft {
+  transition: all 0.25s ease;
+}
+
+/* =============================================================
+   END BlessNotes Theme
+   ============================================================*/
